@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio - Glassmorphism</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white font-sans relative overflow-x-hidden transition-colors duration-500">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full backdrop-blur-md bg-white/10 z-50 border-b border-white/10">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold tracking-wide">My<span class="text-cyan-400">Port</span></h1>
+      <ul class="flex gap-6 text-sm font-medium">
+        <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-cyan-400 transition">Tentang</a></li>
+        <li><a href="#projects" class="hover:text-cyan-400 transition">Projek</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400 transition">Kontak</a></li>
+      </ul>
+      <button id="theme-toggle" class="p-2 rounded-lg bg-white/10 hover:bg-white/20 transition">
+        🌙
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
+    <div class="glass p-10 rounded-3xl max-w-2xl">
+      <img src="https://i.pravatar.cc/200" alt="Foto Profil" class="rounded-full mx-auto mb-6 shadow-lg shadow-cyan-500/20">
+      <h2 class="text-4xl font-bold mb-3">Halo, Saya <span class="text-cyan-400">Nama Anda</span></h2>
+      <p class="text-gray-300">Saya seorang <span class="font-semibold text-cyan-400">Web Developer</span> yang fokus pada tampilan modern, interaktif, dan responsif.</p>
+      <button class="mt-6 bg-cyan-500/20 border border-cyan-400/30 backdrop-blur-md px-6 py-2 rounded-lg hover:bg-cyan-500/40 transition">
+        Hubungi Saya
+      </button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-semibold text-center mb-12">Tentang Saya</h3>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-xl glass" alt="">
+      <div class="glass p-8 rounded-2xl">
+        <p class="text-gray-300 leading-relaxed mb-4">Saya seorang pengembang web dengan pengalaman dalam membuat antarmuka pengguna yang elegan dan pengalaman pengguna yang halus. Saya menggunakan teknologi modern seperti TailwindCSS, React, dan animasi berbasis JavaScript untuk membuat proyek yang menonjol.</p>
+        <p class="text-gray-300 leading-relaxed">Saya menyukai desain minimalis dan efek glassmorphism, yang menciptakan estetika futuristik dan bersih di setiap proyek yang saya buat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 bg-white/5 backdrop-blur-lg">
+    <h3 class="text-3xl font-semibold text-center mb-12">Projek Saya</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
+      <div class="project-card glass">
+        <img src="https://source.unsplash.com/random/400x300?website" alt="" class="rounded-t-2xl">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2">Website Kreatif</h4>
+          <p class="text-gray-300 text-sm">Website modern dengan efek parallax dan animasi halus.</p>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <img src="https://source.unsplash.com/random/400x300?app" alt="" class="rounded-t-2xl">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2">Aplikasi Dashboard</h4>
+          <p class="text-gray-300 text-sm">Dashboard interaktif dengan data real-time.</p>
+        </div>
+      </div>
+      <div class="project-card glass">
+        <img src="https://source.unsplash.com/random/400x300?design" alt="" class="rounded-t-2xl">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold mb-2">Desain Portofolio</h4>
+          <p class="text-gray-300 text-sm">Portofolio dengan efek glass dan transisi dinamis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-semibold text-center mb-12">Hubungi Saya</h3>
+    <form class="glass p-8 rounded-2xl space-y-4">
+      <input type="text" placeholder="Nama Anda" class="w-full p-3 rounded-lg bg-white/10 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+      <input type="email" placeholder="Email Anda" class="w-full p-3 rounded-lg bg-white/10 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+      <textarea placeholder="Pesan Anda" rows="4" class="w-full p-3 rounded-lg bg-white/10 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+      <button class="w-full bg-cyan-500/30 border border-cyan-400/40 backdrop-blur-md py-2 rounded-lg hover:bg-cyan-500/50 transition">
+        Kirim Pesan
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-white/10 bg-white/5 backdrop-blur-md">
+    <p class="text-gray-400 text-sm">© 2025 Nama Anda. Dibuat dengan ❤️ dan TailwindCSS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
